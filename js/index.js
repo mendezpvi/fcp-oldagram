@@ -1,4 +1,4 @@
-import { posts } from "/js/data.js";
+import { posts } from "./data.js";
 
 const commentWrap = document.getElementById("comment-wrap")
 
