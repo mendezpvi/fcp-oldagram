@@ -18,9 +18,11 @@
 
 ![Desktop](./assets/screenshot/desktop.avif)
 
-## *Link* :link:
+## *Links* :link:
 
 [Live Site URL](https://mendezpvi.github.io/fcp-oldagram/) 👀
+
+[Scrimba projects](https://github.com/mendezpvi/fcp-scrimba) 👀
 
 ## *Author* :beginner:
 
