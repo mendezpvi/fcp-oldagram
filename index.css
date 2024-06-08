@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'Exo';
+  src: url('./assets/font/exo2-medium.woff2') format('woff2');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Exo';
+  src: url('./assets/font/exo2-bold.woff2') format('woff2');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, p, ul {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+  min-block-size: 100vh;
+  min-block-size: 100svh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  font-family: var(--ff-exo), sans-serif;
+  font-size: 1rem;
+  background-color: #F5F5F5;
+}
+
+:root {
+  --ff-exo: 'Exo';
+}
+
+/* Layout */
+.container {
+  margin-inline: auto;
+  inline-size: clamp(320px, 86vw, 348px);
+}
+.header {
+  padding-block: .8rem;
+  border-bottom: 1px solid lightgrey;
+  background-color: #fff;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main {
+  display: grid;
+  gap: 1.5rem;
+  background-color: #EDEDED;
+}
+
+.post {
+  padding-block: 1.5rem;
+  background-color: #fff;
+}
+
+.user-info {
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: .5rem;
+}
+
+.icon-wrap {
+  padding-block: .6rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Tipography */
+.user-full-name {
+  font-size: 13px;
+}
+.user-location {
+  font-size: 12px;
+  font-weight: 500;
+}
+.like-count {
+  font-size: 13px;
+  font-weight: 700;
+}
+.comment-wrap {
+  font-size: 13px;
+}
+.nickname {
+  font-weight: 700;
+}
+
+/* Images and icons */
+.logo {
+  max-inline-size: 8rem;
+}
+.user-avatar {
+  inline-size: 2.125rem;
+  block-size: 2.125rem;
+  font-style: italic;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.post .user-avatar {
+  grid-row: span 2;
+}
+.post-img {
+  max-inline-size: 375px;
+}
+.btn {
+  display: grid;
+  place-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.icon {
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+}
+
+/* States */
+.heart-btn:focus-visible,
+.heart-btn:hover {
+  filter: invert(19%) sepia(93%) saturate(5510%) hue-rotate(356deg) brightness(97%) contrast(118%);
+}
+.comment-btn:focus-visible,
+.comment-btn:hover {
+  filter: invert(45%) sepia(85%) saturate(5962%) hue-rotate(128deg) brightness(100%) contrast(91%);
+}
+.dm-btn:focus-visible,
+.dm-btn:hover {
+  filter: invert(46%) sepia(36%) saturate(1915%) hue-rotate(185deg) brightness(92%) contrast(95%);
+}
